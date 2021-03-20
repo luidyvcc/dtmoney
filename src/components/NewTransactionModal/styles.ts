@@ -13,7 +13,7 @@ export const Container = styled.form`
     padding: 0 1.5rem;
     height: 4rem;
     border-radius: 0.25rem;
-    color: #fff;
+    color: ${({ theme }) => theme.color.input.color};
 
     border: 1px solid ${({ theme }) => theme.color.input.border};
     background: ${({ theme }) => theme.color.input.background};
