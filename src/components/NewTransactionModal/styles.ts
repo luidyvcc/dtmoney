@@ -3,7 +3,7 @@ import { darken, transparentize } from 'polished';
 
 export const Container = styled.form`
   h2 {
-    color: var(--text-title);
+    color: ${({ theme }) => theme.color.textTitle};
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -13,15 +13,16 @@ export const Container = styled.form`
     padding: 0 1.5rem;
     height: 4rem;
     border-radius: 0.25rem;
+    color: #fff;
 
-    border: 1px solid #d7d7d7;
-    background: #e7e9ee;
+    border: 1px solid ${({ theme }) => theme.color.input.border};
+    background: ${({ theme }) => theme.color.input.background};
 
     font-weight: 400;
     font-size: 1rem;
 
     ::placeholder {
-      color: var(--text-body);
+      color: ${({ theme }) => theme.color.textBody};
     }
 
     + input {
@@ -33,7 +34,7 @@ export const Container = styled.form`
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
-    background: var(--success);
+    background: ${({ theme }) => theme.color.success};
     color: #fff;
     border-radius: 0.25rem;
     border: 0;
@@ -95,6 +96,6 @@ export const RadioBox = styled.button<RadioBoxProps>`
     display: inline-block;
     margin-left: 1rem;
     font-size: 1rem;
-    color: var(--text-title);
+    color: ${({ theme }) => theme.color.textTitle};
   }
 `;

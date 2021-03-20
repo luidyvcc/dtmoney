@@ -1,19 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
-:root {
-  --danger: #e52e4d;
-  --success: #33cc95;
-  --main: #5429cc;
-
-  --main-light: #6933ff;
-
-  --text-title: #363f5f;
-  --text-body: #969cb3;
-
-  --background: #f2f0f5;
-  --shape: #fff;
-}
+export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -31,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--background);
+    background: ${({ theme }) => theme.color.background};
     -webkit-font-smoothing: antialiased;
   }
 
@@ -70,7 +57,7 @@ export const GlobalStyle = createGlobalStyle`
   .react-modal-content {
     width: 100%;
     max-width: 576px;
-    background: var(--background);
+    background: ${({ theme }) => theme.color.background};
     padding: 3rem;
     position: relative;
     border-radius: 0.24rem;
@@ -89,5 +76,4 @@ export const GlobalStyle = createGlobalStyle`
       filter: brightness(0.8);
     }
   }
-
 `;

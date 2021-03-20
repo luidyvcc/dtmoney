@@ -1,0 +1,42 @@
+{
+  "data": {
+    "light": {
+      "id": "theme001",
+      "name": "Light",
+      "color": {
+        "danger": "#e52e4d",
+        "success": "#33cc95",
+        "main": "#5429cc",
+        "mainLight": "#6933ff",
+        "textTitle": "#363f5f",
+        "textBody": "#969cb3",
+        "background": "#f2f0f5",
+        "shape": "#fff",
+        "input": {
+          "color": "#000",
+          "background": "#e7e9ee",
+          "border": "#d7d7d7"
+        }
+      }
+    },
+    "dark": {
+      "id": "theme002",
+      "name": "Dark",
+      "color": {
+        "danger": "#e52e4d",
+        "success": "#33cc95",
+        "main": "#5429cc",
+        "mainLight": "#6933ff",
+        "textTitle": "#fff",
+        "textBody": "#7c7c7c",
+        "background": "#242424",
+        "shape": "#383838",
+        "input": {
+          "color": "#fff",
+          "background": "#505050",
+          "border": "#7e7e7e"
+        }
+      }
+    }
+  }
+}
