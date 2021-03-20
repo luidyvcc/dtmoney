@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import { createServer, Model } from 'miragejs';
 import { App } from './App';
 
+import * as themes from './theme/schema.json';
+import { setLocalStorage } from './utils/storage';
+
 createServer({
   models: {
     transaction: Model,
@@ -46,9 +49,14 @@ createServer({
   }
 });
 
+const Index = () => {
+  setLocalStorage('all-themes', themes.data);
+  return <App />
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Index />
   </React.StrictMode>,
   document.getElementById('root')
 );

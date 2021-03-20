@@ -7,10 +7,10 @@ export const Container = styled.main`
   margin-top: -10rem;
 
   div {
-    background: var(--shape);
+    background: ${({ theme }) => theme.color.shape};
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
-    color: var(--text-title);
+    color: ${({ theme }) => theme.color.textTitle};
 
     header {
       display: flex;
@@ -27,7 +27,7 @@ export const Container = styled.main`
     }
 
     &.highline-background {
-      background: var(--success);
+      background: ${({ theme }) => theme.color.success};
       color: #fff;
     }
   }
